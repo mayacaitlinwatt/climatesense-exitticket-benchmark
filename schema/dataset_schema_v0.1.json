@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ClimateSense Exit-Ticket Dataset Schema v0.1",
+  "description": "Schema for student response records in the ClimateSense benchmark dataset.",
+  "type": "object",
+  "required": [
+    "record_id",
+    "item_id",
+    "prompt_text",
+    "response_text",
+    "expression_condition",
+    "gold_label_primary",
+    "gold_label_method",
+    "gold_label_adjudicated",
+    "benchmark_version",
+    "data_origin",
+    "usage_restrictions"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Unique identifier for this record (e.g., CS-000041)."
+    },
+    "item_id": {
+      "type": "string",
+      "description": "Identifier for the prompt/item this response belongs to (e.g., Q01)."
+    },
+    "prompt_text": {
+      "type": "string",
+      "description": "The full text of the exit-ticket prompt presented to the student."
+    },
+    "response_text": {
+      "type": "string",
+      "description": "The student's response text, as written."
+    },
+    "expression_condition": {
+      "type": "string",
+      "description": "Response-form condition tag (e.g., academic_standard, telegraphic_short_form, multilingual_leaning, dialectal_variety, code_switched).",
+      "examples": [
+        "academic_standard",
+        "telegraphic_short_form",
+        "multilingual_leaning",
+        "dialectal_variety",
+        "code_switched"
+      ]
+    },
+    "gold_label_primary": {
+      "type": "string",
+      "description": "Primary gold label: a misconception family ID (e.g., MF01_ozone_vs_greenhouse) or a non-misconception label.",
+      "examples": [
+        "MF01_ozone_vs_greenhouse",
+        "MF04_carbon_disappears",
+        "SCIENTIFICALLY_CORRECT",
+        "UNCLEAR_INSUFFICIENT_EVIDENCE",
+        "OFF_TOPIC_NOISY"
+      ]
+    },
+    "gold_label_secondary": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Optional list of additional misconception families present in the response.",
+      "default": []
+    },
+    "gold_label_confidence_final": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Confidence in the gold label assignment."
+    },
+    "gold_label_method": {
+      "type": "string",
+      "enum": ["single_rater", "third_rater", "consensus"],
+      "description": "How the gold label was finalized."
+    },
+    "gold_label_adjudicated": {
+      "type": "boolean",
+      "description": "Whether this record went through adjudication."
+    },
+    "labeler_role": {
+      "type": "string",
+      "description": "Role of the labeler(s) (e.g., project_team, educator, content_expert)."
+    },
+    "benchmark_version": {
+      "type": "string",
+      "description": "Benchmark version this record belongs to (e.g., 0.1)."
+    },
+    "data_origin": {
+      "type": "string",
+      "enum": ["constructed_exemplar", "educator_constructed", "authentic_student"],
+      "description": "How the response was sourced."
+    },
+    "usage_restrictions": {
+      "type": "string",
+      "description": "Usage restrictions for this record.",
+      "default": "Formative use only; not for grading or high-stakes decisions."
+    }
+  }
+}
