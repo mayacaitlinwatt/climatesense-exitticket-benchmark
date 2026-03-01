@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "ClimateSense Exit-Ticket Benchmark"
+version: "0.1"
+date-released: "2026-02-28"
+abstract: >
+  Public benchmark and evaluator harness for AI-augmented formative assessment.
+  Measures misconception-family detection accuracy, robustness across response-form
+  conditions, and teacher usefulness of AI feedback for grades 9–10 climate science
+  exit tickets.
+authors:
+  - name: "People's Evidence Lab"
+repository-code: "https://github.com/PeoplesEvidenceLab/climatesense-exitticket-benchmark"
+license: "Apache-2.0"
+keywords:
+  - benchmark
+  - k12
+  - formative-assessment
+  - evaluation
+  - education
+  - climate
+  - misconception-detection
+contact:
+  - email: "stevewatt13@peoplesevidencelab.com"
+    name: "Steve Watt"
