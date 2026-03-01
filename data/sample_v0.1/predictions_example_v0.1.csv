@@ -1,0 +1,13 @@
+record_id,predicted_label,confidence,feedback_text,next_step_text
+CS-0001,SCIENTIFICALLY_CORRECT,0.92,"Correct: greenhouse gases absorb and re-emit infrared, reducing heat loss to space.",Ask students to sketch energy in/out arrows.
+CS-0002,SCIENTIFICALLY_CORRECT,0.75,Mostly correct but add that it reduces heat escaping to space.,Prompt for a second sentence about outgoing infrared.
+CS-0003,SCIENTIFICALLY_CORRECT,0.7,Correct idea: more greenhouse gases means less heat escapes.,Have student name a greenhouse gas and the type of radiation.
+CS-0004,SCIENTIFICALLY_CORRECT,0.78,Good: less heat escapes so temperature rises.,Ask for mechanism: absorb/re-emit infrared.
+CS-0005,SCIENTIFICALLY_CORRECT,0.68,Correct: greenhouse gases trap outgoing heat (infrared).,Ask for evidence: CO2 measurements + warming trend.
+CS-0006,MF01_ozone_vs_greenhouse,0.83,Common misconception: ozone depletion is different from greenhouse warming.,Compare ozone vs greenhouse gases with a diagram.
+CS-0007,UNCLEAR_INSUFFICIENT_EVIDENCE,0.55,Response is vague and mixes ideas.,Ask student to restate one clear claim with evidence.
+CS-0008,SCIENTIFICALLY_CORRECT,0.88,Correct: fossil carbon moves into the atmosphere; some enters ocean/biota but persists.,Ask for two reservoirs and timescale.
+CS-0009,SCIENTIFICALLY_CORRECT,0.6,Right direction: atmosphere then ocean; add plants/soil and persistence.,Have student name a second reservoir.
+CS-0010,MF03_trees_solve_it,0.58,Tree planting helps but doesn't automatically eliminate all CO2 quickly.,Discuss scale and time-lag.
+CS-0011,MF02_carbon_disappears_quickly,0.72,Misconception: carbon doesn't just vanish; it moves among reservoirs.,Have student map reservoir transfers.
+CS-0012,MF03_trees_solve_it,0.8,Misconception: trees alone cannot solve climate change at required scale/time.,Compare emissions vs potential sequestration.

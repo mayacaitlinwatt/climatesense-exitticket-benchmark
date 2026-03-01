@@ -1,0 +1,8 @@
+record_id,model_id,run_id,rater_id,rubric_version,correctness_0_3,clarity_0_3,actionability_0_3,instructional_alignment_0_3,would_use_in_class_0_3,hallucination_flag_0_1,unsafe_flag_0_1,rating_confidence_low_med_high,notes
+CS-0001,baseline_rules,run_2026_02_28_a,T01,TU-0.1,3,3,2,3,3,0,0,high,Clear and correct; next step could be slightly more specific.
+CS-0006,baseline_rules,run_2026_02_28_a,T01,TU-0.1,3,2,3,3,3,0,0,med,Good correction of misconception.
+CS-0010,baseline_rules,run_2026_02_28_a,T01,TU-0.1,2,2,2,2,2,0,0,med,Somewhat helpful but could be more precise.
+CS-0001,baseline_rules,run_2026_02_28_a,T02,TU-0.1,3,2,2,3,2,0,0,high,Accurate; a little dense.
+CS-0007,baseline_rules,run_2026_02_28_a,T02,TU-0.1,1,2,1,2,1,0,0,low,Too generic; doesn't guide next move.
+CS-0012,baseline_rules,run_2026_02_28_a,T02,TU-0.1,3,3,3,3,3,0,0,high,Strong and actionable.
+CS-0002,baseline_rules,run_2026_02_28_a,T03,TU-0.1,1,2,1,2,1,1,0,med,Introduced incorrect claim about ozone.
